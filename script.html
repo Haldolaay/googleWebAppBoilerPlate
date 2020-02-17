@@ -1,0 +1,10 @@
+<script>
+    document.getElementById('sub').addEventListener('click',function(){
+    let id = document.getElementById('studentID')
+    let phone = document.getElementById('phoneNumber')
+    google.script.run.clicked(id.value,phone.value)})
+    id.value = "";
+    phone.value = "";
+    
+    
+    </script>
