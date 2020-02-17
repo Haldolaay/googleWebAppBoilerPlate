@@ -7,7 +7,7 @@ function doGet(event) {
   var page = HtmlService.createTemplateFromFile("index");
   return page.evaluate();
   };
-
+// this doesn't work
 //function include(styleSheet) {
 //  return HtmlService.createHtmlOutputFromFile(styleSheet)
 //      .getContent();
@@ -16,6 +16,7 @@ function doGet(event) {
 // id 
 // text number
 // include function for adding style and js to html
+// that's the only way I know to use style and js with an html file in google web apps
 function include(fileName){
   
   return HtmlService.createHtmlOutputFromFile(fileName).getContent();
